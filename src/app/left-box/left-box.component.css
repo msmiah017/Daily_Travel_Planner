@@ -1,0 +1,40 @@
+.left-box-container{
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+}
+.left-box-title{
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    /* box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2); */
+    /* margin: 2px; */
+}
+.left-box-container form{
+    height: 90%;
+    width: 100%;
+    /* background-color: green; */
+    padding: 10px;
+}
+.left-box-container form label{
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.left-box-container form input{
+    height: 30px;
+    width: 100%;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.left-box-container form textarea{
+    height: 60px;
+    width: 100%;
+}
+
+.left-box-container #submit-plan{
+    border: 2px solid var(--background-color-1);
+}

@@ -1,0 +1,49 @@
+<section class="center_box_container">
+    <div class="searchBox">
+        <input type="text" placeholder="Search a plan">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+
+    <ng-container *ngIf="isLoading; else planContents">
+        <div class="post-loading">
+            <p>Something great is about to happen...</p>
+        </div>
+    </ng-container> 
+
+    <ng-template #planContents>
+        <div class="posted-plans-container">
+            <div class="posted-plan" *ngFor="let travelInfo of travelData">
+                <div class="maneuverInfo">
+                    <div class="location-time">
+                        <p>
+                            {{travelInfo.departureLocation}} to {{travelInfo.destinationLocation}} <br>
+                            {{travelInfo.leavingTime}} to {{travelInfo.arrivingTime}}
+                        </p>
+                        <!-- <p></p> -->
+                    </div>
+                    <div class="calculated-time">
+                        <p> 30 minutes </p>
+                    </div>
+                </div>
+                <h2 class="plan-title"> {{travelInfo.travelReason}} </h2>
+                <div class="plan-description">
+                    <p>{{travelInfo.description}}</p>
+                </div>
+                <div class="actions-box">
+                    <div class="travel-date">
+                        Date: {{travelInfo.travelDate}}
+                    </div>
+                    <div class="actions">
+                        <button class="primary-btn-style" (click)="deletePlan(travelInfo, travelInfo._id)">Delete</button>
+                        <a [routerLink] = "['/updatePlanPage']"> <button class="primary-btn-style">Update</button></a>
+                        <button class="primary-btn-style">Complete</button>
+                    </div>
+                </div>
+            </div>   
+        </div>
+        <div class="center-footer">
+            <p> These are all the posts you have at the moment.</p>
+        </div>
+    </ng-template>
+
+</section>

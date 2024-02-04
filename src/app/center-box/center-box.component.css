@@ -1,0 +1,110 @@
+.center_box_container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow-y: auto;
+    /* scroll-behavior:scroll; */
+}
+
+.update-plan-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--primary-color);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3), 0px -10px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.center_box_container .searchBox {
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.center_box_container .searchBox input {
+    height: 45px;
+    width: 95%;
+    padding: 10px;
+    background-color: #909f9a;
+    border: none;
+    color: white;
+}
+
+.searchBox input::placeholder {
+    color: rgb(255, 255, 255, 0.8);
+    /* Set the desired color */
+}
+
+.searchBox i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 50px;
+    padding: 10px;
+    color: rgb(255, 255, 255, 0.8);
+}
+
+.post-loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center_box_container .posted-plan {
+    /* height: 300px; */
+    width: calc(100% - 20px); 
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.posted-plan .maneuverInfo {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.posted-plan .plan-title{
+   margin: 10px 0px;
+   font-size: 16px;
+   font-weight: bold;
+}
+
+.posted-plan .plan-description {
+    text-align: justify;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.actions-box{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posted-plan .travel-date {
+    color: orange;
+}
+
+.center-footer{
+    height: 100px;
+    color: var(--background-color-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

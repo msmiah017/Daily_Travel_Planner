@@ -1,0 +1,33 @@
+.header-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+}
+
+.header-container h1{
+    font-size: large;
+    color: var(--primary-color);
+}
+
+.header-container .profile-container{
+    height: 50px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-color);
+}
+.profile-container .user-profile{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    /* background: #f0f0f0 url(serProfilePicPath) no-repeat fixed center;
+    background-size: cover; */
+}

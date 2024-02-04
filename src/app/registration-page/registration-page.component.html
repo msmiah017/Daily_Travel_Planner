@@ -1,0 +1,26 @@
+<div class="registration-page-container">
+    <div class="registration-box">
+        <div class="welcome-box">
+            <h1> Daily Travel Planner</h1>
+            <h3> Register for a great experience</h3>
+        </div>
+        <div class="registration-form-box">
+            <h2>Register</h2>
+            <form class="registration-form">
+
+                <label for="accountName">Account Name</label><br>
+                <input id="accountName" type="text" formControlName="accountName"><br>
+
+                <label for="userEmail">Email</label><br>
+                <input id="userEmail" type="email" formControlName="emailControl"><br>
+
+                <label for="password"> Password </label><br>
+                <input id="password" type="password" formControlName="passwordControl"><br>
+
+                <div class="registration-btn-container">
+                    <a [routerLink]="['/']"><button class="secondary-btn" type="submit">Continue</button></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

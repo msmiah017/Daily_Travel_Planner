@@ -1,0 +1,31 @@
+<section class="left-box-container">
+    <!-- <app-update-plan class="update_plan_container"></app-update-plan>  -->
+    <div class="left-box-title">
+        <h2>Add a new plan</h2>
+    </div>
+    <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <label for="travel-date">Date</label><br>
+        <input id="travel-date" type="date" formControlName="travelDate"><br>
+
+        <label for="leave-at"> Leave At </label><br>
+        <input id="leave-at" type="time" formControlName="leavingTime"><br>
+
+        <label for="arrive-by"> Arrive By </label><br>
+        <input id="arrive-by" type="time" formControlName="arrivingTime"><br>
+
+        <label for="departure-location"> From </label><br>
+        <input id="departure-location" type="text" formControlName="departureLocation"><br>
+
+        <label for="destination-location"> To </label><br>
+        <input id="destination-location" type="text" formControlName="destinationLocation"><br>
+
+
+        <label for="travel-reason"> Travel Reason </label><br>
+        <textarea id="travel-reason" formControlName="travelReason"></textarea><br>
+
+        <label for="description">Description</label><br>
+        <textarea id="description" formControlName="description"></textarea><br>
+        
+        <input class="primary-btn-style" id="submit-plan" type="submit" value="Add Plan"><br>
+    </form>
+</section>

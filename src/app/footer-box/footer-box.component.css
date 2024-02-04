@@ -1,0 +1,15 @@
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #87CEEB, #1E90FF);
+    padding: 20px 0px;
+}
+.footer-content p{
+    color: var(--primary-color);
+}
+.footer-content p:first-child{
+    margin-bottom: 5px;
+    font-size: 20px;
+}

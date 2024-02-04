@@ -1,0 +1,24 @@
+<div class="login-page-container">
+    <div class="login-box">
+        <div class="welcome-box boxes">
+            <p> Welcome To</p>
+            <h1> Daily Travel Planner</h1>
+        </div>
+        <div class="login-form boxes">
+            <h2>Login</h2>
+            <form class="update-form">
+
+                <label for="userEmail">Email</label><br>
+                <input id="userEmail" type="email" formControlName="emailControl" required><br>
+
+                <label for="password"> Password </label><br>
+                <input id="password" type="password" formControlName="passwordControl"><br>
+
+                <div class="login-btn-container">
+                    <a [routerLink]="['/home']" (click)="clicked()">Login</a>
+                    <p> Haven't got any account? <a routerLink="/register"> Register Now </a></p>
+                </div> 
+            </form> 
+        </div>
+    </div>
+</div>

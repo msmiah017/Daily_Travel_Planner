@@ -1,0 +1,27 @@
+/* styles.scss or component-specific styles  */
+.main_body_container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 4px;
+    height: calc(120vh - 60px);
+}
+
+/* .update_plan_container{
+      
+    } */
+/* .update_plan_container:hover {
+    transform: scale(1.01);
+} */
+
+.side-box {
+    grid-column: span 2;
+    /* Each side-box takes 2 columns */
+    background-color: var(--background-color-2);
+}
+
+.center-box {
+    grid-column: span 4;
+    /* Center-box takes 4 columns */
+    background-color: var(--primary-color);
+    height: calc(120vh - 60px);
+}
