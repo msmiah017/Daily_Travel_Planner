@@ -21,7 +21,7 @@ Welcome to the Journey Planner Web Application! This Angular-based web app enabl
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/journey-planner.git
+   git clone https://github.com/msmiah017/Daily_Travel_Planner
    cd journey-planner
 
 2. **Install dependencies:**
